@@ -1,4 +1,4 @@
-import { useState, useEffect } from react;
+import { useState, useEffect } from 'react';
 
 interface LoginCredentials {
 username: string;
@@ -36,7 +36,7 @@ checkSession();
   setUsername(savedUsername);
   }
   } catch (error) {
-  console.error(Erro ao verificar sessão:, error);
+  console.error("Erro ao verificar sessão:", error);
   } finally {
   setIsLoading(false);
   }
@@ -104,7 +104,7 @@ try {
   setUsername();
   setError(null);
   } catch (error) {
-  console.error(Erro ao fazer logout:, error);
+  console.error('Erro ao fazer logout:', error);
   }
   };
 
@@ -115,12 +115,12 @@ try {
 
 }
 return {
-isLoggedIn,
-username,
-isLoading,
-error,
-login,
-logout,
-clearError,
-checkSession,
+    isLoggedIn,
+    username,
+    isLoading,
+    error,
+    login,
+    logout,
+    clearError,
+    checkSession,
 };

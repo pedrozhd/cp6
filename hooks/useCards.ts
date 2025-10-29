@@ -87,7 +87,6 @@ try {
 } finally {
   setLoading(false);
 }
-```
 
 };
 
@@ -101,7 +100,6 @@ try {
   setLoading(true);
   setError(null);
 
-```
 try {
   const url = `https://api.pokemontcg.io/v2/cards/${cardId}`;
   const response = await fetch(url);
